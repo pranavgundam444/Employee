@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+
+* {
+  color: #fff;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+}
+#tasks::-webkit-scrollbar {
+  display: none;
+}
