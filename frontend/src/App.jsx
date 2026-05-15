@@ -32,6 +32,7 @@ const App = () => {
           localStorage.setItem("loggedInUser", JSON.stringify({role: 'admin', data: owner}))
           console.log("Admin is logged in")
           
+          
         }
         else if(employee) {
           setUser("employee")
@@ -46,8 +47,8 @@ const App = () => {
   }
   return (
     <>
-      {user=="" ? <Login handleLogin={handleLogin} />: ''}
-      {user == "admin" ? <AdminPanel changeUser={setUser} data={loggedInUserData} /> : (user == "employee" ? <EmployeeTasks changeUser={setUser} data={loggedInUserData} /> : '')}
+        {user=="" ? <Login handleLogin={handleLogin} />: ''}
+        {user == "admin" ? <AdminPanel changeUser={setUser} data={loggedInUserData} /> : (user == "employee" ? <EmployeeTasks changeUser={setUser} data={loggedInUserData} /> : '')}
     </>
   )
 }

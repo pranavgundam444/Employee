@@ -36,7 +36,7 @@ const CreateTask = () => {
 
   return (
     <div>
-        <div className='mt-10 bg-[#1c1c1c] p-10 flex items-start justify-between gap-30'>
+        <div className='mt-10 overflow-y-scroll bg-[#1c1c1c] p-5 flex items-start justify-between h-70 gap-30'>
             <div className='w-1/2'>
                 <h2 className='mb-2'>Task Title</h2>
                 <input type="text" className='mb-5 w-full border-1 p-1' placeholder='Make a UI Design' value={title} onChange={(e) => setTitle(e.target.value)}/>
@@ -49,11 +49,11 @@ const CreateTask = () => {
             </div>
             <div className='w-1/2 flex flex-col'>
                 <h2>Description</h2>
-                <textarea type="text" id="" cols={30} rows={10} className='border-1' value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+                <textarea type="text" id="" cols={25} rows={7} className='border-1' value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
                 <button onClick={handleCreateTasks} className='bg-green-300 mt-5 rounded p-2'>Create Task</button>
             </div>
         </div>
-        <div className='bg-[#1c1c1c] mt-7 px-10 py-5 h-60'>
+        <div className='bg-[#1c1c1c] mt-7 px-10 py-5 h-70'>
             <div className='flex justify-between bg-red-400 py-3 px-4 mb-3 rounded'>
                         <h2  className='w-1/5'>Employee Name</h2>
                         <h3  className='w-1/5'>New Task</h3>
